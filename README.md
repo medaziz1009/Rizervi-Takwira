@@ -1,2 +1,2 @@
 # Rizervi-Takwira
-réservation des espaces sportifs
+Réservation des espaces sportifs
