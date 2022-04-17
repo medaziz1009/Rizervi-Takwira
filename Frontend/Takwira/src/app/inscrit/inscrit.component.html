@@ -1,0 +1,128 @@
+<nav class="cc-navbar navbar navbar-expand-lg navbar-dark position-fixed w-100">
+    <div class="container-fluid">
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <div class="row">
+		    <div class="col-7">
+				<div class="top-left-part"><a class="logo" href="index.html"><b><img
+					src="../../assets/logotak.png" alt="home" style="width: 220px; height: 40px; left: 50px; top: 20px;" /></b></a>
+	</div>
+			</div>
+			
+			<div class="col-5">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item pe-4">
+						<a class="nav-link" href="#" style="font-size: 18px;">Accueil</a>
+					</li>
+                    
+					<li class="nav-item pe-4">
+						<a class="nav-link" href="#" style="font-size: 18px;">Catalogue</a>
+					</li>
+					<li class="nav-item pe-4">
+						<a class="nav-link" href="#" style="font-size: 18px;">Contact_us</a>
+					</li>
+                    <li class="nav-item pe-4">
+					</li>
+                    <li class="nav-item pe-4">
+						<a class="nav-link" routerLink="/login" style="font-size: 18px;">Sign_in</a>
+					</li>
+                    <li class="nav-item pe-4">
+						<a class="nav-link active" aria-current="page" style="font-size: 18px;">Sign_up</a>
+					</li>
+				
+				</ul>
+			</div>
+        </div>
+      </div>
+    </div>
+</nav>
+<body>
+    
+<div class="main">
+    <div class="container">
+
+        <div class="signup-form">
+            <form method="POST" class="register-form" id="register-form">
+                <h1>Créer votre compte</h1>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nom">Nom :</label>
+                        <input type="text" name="nom" id="nom" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" name="prenom" id="prenom" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="date_nais">Date de naissance :</label>
+                        <input type="date" name="date_nais" id="date_nais" required />
+                    </div>
+                </div>
+                <div class="form-radio">
+                    <label class="radio-label">Gender :</label>
+                    <div class="form-radio-item">
+                        <input type="radio" name="gender" id="male" checked>
+                        <label for="male"style=" font-size: 20px; ">Homme</label>
+                        <span class="check"></span>
+                    </div>
+                    <div class="form-radio-item">
+                        <input type="radio" name="gender" id="female">
+                        <label for="female"style=" font-size: 20px; ">Femme</label>
+                        <span class="check"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="address">Adresse E-mail :</label>
+                    <input type="text" name="email" id="email" required />
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="state">Adresse :</label>
+                        <input type="text" name="adresse" id="adresse" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="city">Ville :</label>
+                        <input type="text" name="ville" id="ville" required />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="birth_date">Numéro Téléphone :</label>
+                        <input type="tel" name="tel" id="tel">
+                    </div>
+                    <div class="form-group">
+                        <label for="pincode">Mot De Passe :</label>
+                        <input type="password" name="pass" id="pass">
+                    </div>
+                </div>
+                <div class="form-radio">
+                    <label class="radio-label">Type D'utilisateur :</label>
+                    <div class="form-radio-item">
+                        <input type="radio" name="user" id="client" checked>
+                        <label for="client" style=" font-size: 20px; ">Client</label>
+                        <span class="check"></span>
+                    </div>
+                    <div class="form-radio-item">
+                        <input type="radio" name="user" id="prop">
+                        <label for="prop"style=" font-size: 20px; ">Propriétaire</label>
+                        <span class="check"></span>
+                    </div>
+                </div>
+                <div class="form-submit">
+                    <a routerLink="/">
+                        <button class="submit-btn" id="annuler">Annuler</button>
+                    </a>
+                    <button class="submit-btn" id="submit">S'inscrire</button>
+                </div>
+                <br>
+                <p class="loginhere" style="  font-size: 17px;">
+                    Vous avez un compte ? <a routerLink="/login" class="loginhere-link" style="  font-size: 17px;"><b>Se connecter</b> </a>
+                </p>
+            </form>
+            
+        </div>
+
+
+    </div>
+</div>
+
+</body>

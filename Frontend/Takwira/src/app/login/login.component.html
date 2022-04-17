@@ -1,0 +1,70 @@
+<nav class="cc-navbar navbar navbar-expand-lg navbar-dark position-fixed w-100">
+    <div class="container-fluid">
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <div class="row">
+		    <div class="col-7">
+				<div class="top-left-part"><a class="logo" href="index.html"><b><img
+					src="../../assets/logotak.png" alt="home" style="width: 220px; height: 40px; left: 50px; top: 20px;" /></b></a>
+	</div>
+			</div>
+			
+			<div class="col-5">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item pe-4">
+						<a class="nav-link "  routerLink="/" style="font-size: 18px;">Accueil</a>
+					</li>
+					<li class="nav-item pe-4">
+						<a class="nav-link" href="#" style="font-size: 18px;">Catalogue</a>
+					</li>
+					<li class="nav-item pe-4">
+						<a class="nav-link" href="#" style="font-size: 18px;">About_us</a>
+					</li>
+                    <li class="nav-item pe-4">
+					</li>
+                    <li class="nav-item pe-4">
+						<a class="nav-link active" aria-current="page" style="font-size: 18px;">Sign_in</a>
+					</li>
+                    <li class="nav-item pe-4">
+						<a class="nav-link" routerLink="/inscrit" style="font-size: 18px;">Sign_up</a>
+					</li>
+				
+				</ul>
+			</div>
+        </div>
+      </div>
+    </div>
+</nav>
+<div class="main">
+    <div class="container">
+        <div class="sign-up-content">
+            <form method="POST" class="signup-form">
+                <h2 class="form-title">Quel genre d'utilisateur êtes-vous ?</h2>
+                <div class="form-radio" id="genre">
+                    <input type="radio" name="member_level" value="client" id="client" checked="checked" />
+                    <label for="client">Client</label>
+                    <input type="radio" name="member_level" value="prop" id="prop" />
+                    <label for="prop">Propriétaire</label>
+                </div>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Votre adresse e-mail">
+                </div>
+                <div >
+                    <input type="password" name="pass" id="pass" placeholder="Votre mot de passe">
+                </div>
+<br><br>
+
+                <div class="form-textbox">
+                    <div class="col-5 offset-8">
+
+                        <button id="submit">Se connecter</button>
+                    </div>
+                </div>
+            </form>
+
+            <p class="signuphere" style="font-size: 17px;">
+                Vous n'avez pas encore de compte ? <a routerLink="/inscrit" class="signuphere-link"><b> S'inscrire</b></a>
+            </p>
+        </div>
+    </div>
+
+</div>
